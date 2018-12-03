@@ -16,10 +16,8 @@ class InventoryManagementSystemPartOne(Solution):
 
         for value in self.data:
             counter = Counter(value.strip())
-
             for key in results:
-                if key in counter.values():
-                    results[key] += 1
+                results[key] += key in counter.values()
 
         return results[2] * results[3]
 
@@ -53,6 +51,4 @@ class InventoryManagementSystemPartTwo(Solution):
 
     def get_common(self, a, b):
         """Get string of common characters between two similar strings."""
-        return reduce(
-            lambda x, y: x + (y[0] if y[0] == y[1] else ''), zip(a, b), ''
-        )
+        return ''.join(x for x, y in zip(a, b) if x == y)

@@ -1,4 +1,7 @@
-from libs import TestCase, register
+from libs import (
+    TestCase,
+    register,
+)
 
 
 @register(day=2, part=1, is_test=True)

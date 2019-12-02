@@ -1,4 +1,7 @@
-from main import captcha_1, captcha_2
+from main import (
+    captcha_1,
+    captcha_2,
+)
 
 
 def tests():

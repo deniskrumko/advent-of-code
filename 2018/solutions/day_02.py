@@ -1,7 +1,10 @@
 from collections import Counter
 from functools import reduce
 
-from libs import Solution, register
+from libs import (
+    Solution,
+    register,
+)
 
 
 @register(day=2, part=1)

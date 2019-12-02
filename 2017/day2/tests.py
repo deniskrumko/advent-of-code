@@ -1,4 +1,7 @@
-from main import checksum_1, checksum_2
+from main import (
+    checksum_1,
+    checksum_2,
+)
 
 
 def tests():

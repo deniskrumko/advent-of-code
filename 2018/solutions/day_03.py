@@ -1,4 +1,7 @@
-from libs import Solution, register
+from libs import (
+    Solution,
+    register,
+)
 
 
 @register(day=3, part=1)

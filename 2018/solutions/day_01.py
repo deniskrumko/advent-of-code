@@ -1,6 +1,9 @@
 from itertools import cycle
 
-from libs import Solution, register
+from libs import (
+    Solution,
+    register,
+)
 
 
 @register(day=1, part=1)

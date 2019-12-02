@@ -1,4 +1,7 @@
-from main import passphrase_check_1, passphrase_check_2
+from main import (
+    passphrase_check_1,
+    passphrase_check_2,
+)
 
 
 def tests():

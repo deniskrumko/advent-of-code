@@ -1,4 +1,7 @@
-from main import ManhattanDistance, AdjacentSquares
+from main import (
+    AdjacentSquares,
+    ManhattanDistance,
+)
 
 
 def tests():

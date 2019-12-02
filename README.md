@@ -1,29 +1,9 @@
-# advent-of-code-2k18
+# Advent Of Code
 
-Python-powered solutions for Advent of Code 2018
+Some python-powered solution for [Advent of Code](https://adventofcode.com/).
 
-## Requirements
+# Current state
 
-* Python >= 3.6
-
-## How to use
-
-For example, to run day **one** solution, part **two**, you need to run following command:
-
-```bash
-python3 main.py 1.2
-```
-
-To run tests for same solution, use `-t` flag:
-
-```bash
-python3 main.py 1.2 -t
-```
-
-## Project structure
-
-* `docs` contains description of each task.
-* `inputs` contains my own inputs for each task.
-* `libs` contains base classes for solutions or tests.
-* `solutions` contains solution classes for each day.
-* `tests` contains tests for each solution.
+* 2017 - 12/25 tasks (almost got it)
+* 2018 - 3/25 tasks (yeah...)
+* 2019 - just started

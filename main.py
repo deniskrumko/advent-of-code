@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sys
 
 from libs import ArgsParser, registry

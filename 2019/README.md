@@ -1,11 +1,11 @@
-# 🎁 Advent of code 2019 🎄
+# 🎁 Advent Of Code 2019 🎄
 
 https://adventofcode.com/2019
 
 * Day 01 - ⭐⭐
 * Day 02 - ⭐⭐
 * Day 03 - ⭐⭐
-* Day 04
+* Day 04 - ⭐⭐
 * Day 05
 * Day 06
 * Day 07

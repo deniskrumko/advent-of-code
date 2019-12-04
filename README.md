@@ -6,7 +6,7 @@ Some python-powered solution for [Advent of Code](https://adventofcode.com/).
 
 * 2017 - 12/25 tasks (almost got it)
 * 2018 - 3/25 tasks (yeah...)
-* 2019 - 1/25 just started
+* 2019 - in progress
 
 # What's used
 

@@ -1,11 +1,11 @@
 import pytest
 
 from .main import (
+    find_values,
+    intcode_computer,
     intcode_to_list,
     intcode_to_str,
     run_intcode,
-    intcode_computer,
-    find_values,
 )
 
 

@@ -15,12 +15,13 @@ class IntCodeComputer:
         8: operator.eq,
     }
 
-    def __init__(self, intcode: str, input_value: int = 1):
+    def __init__(self, intcode: str, inputs: list, debug: bool = False):
         """Initialize class instance."""
         self.intcode = intcode.strip().split(',')
-        self.input_value = input_value
+        self.inputs = inputs
         self.evaluated = None
         self.printed_value = None
+        self.debug = debug
 
     def run(self) -> str:
         """Mighty intcode computer."""
@@ -40,7 +41,7 @@ class IntCodeComputer:
                 self.write_value(shift=3, value=operation(a, b))
                 self.pos += 4
             elif optcode == 3:  # Input
-                self.write_value(shift=1, value=self.input_value)
+                self.write_value(shift=1, value=self.inputs.pop())
                 self.pos += 2
             elif optcode == 4:  # Output
                 self.printed_value = self.get_parameter(shift=1)
@@ -87,8 +88,8 @@ if __name__ == '__main__':
     with open(input_file, 'r') as f:
         intcode = f.readline()
 
-        computer = IntCodeComputer(intcode=intcode, input_value=1)
+        computer = IntCodeComputer(intcode=intcode, inputs=[1])
         print(f'Last printed value: {computer.run()}')  # 9431221
 
-        computer = IntCodeComputer(intcode=intcode, input_value=5)
+        computer = IntCodeComputer(intcode=intcode, inputs=[5])
         print(f'Diagnostic: {computer.run()}')  # 1409363

@@ -14,7 +14,7 @@ large_example = (
     ('3,0,4,0,99', '5,0,4,0,99', 5),
 ])
 def test_intcode_computer(input_code, evaluated, input_value):
-    computer = IntCodeComputer(input_code, input_value)
+    computer = IntCodeComputer(input_code, inputs=[input_value])
     computer.run()
     assert computer.evaluated == evaluated
 
@@ -25,4 +25,6 @@ def test_intcode_computer(input_code, evaluated, input_value):
     (large_example, 1001, 20),
 ])
 def test_output_of_intcode_computer(input_code, last_output, input_value):
-    assert IntCodeComputer(input_code, input_value).run() == last_output
+    assert IntCodeComputer(
+        input_code, inputs=[input_value]
+    ).run() == last_output

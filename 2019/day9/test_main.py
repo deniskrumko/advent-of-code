@@ -1,6 +1,5 @@
 import pytest
 
-
 from .main import IntCodeComputer
 
 

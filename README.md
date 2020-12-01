@@ -5,7 +5,7 @@ Some python-powered solution for [Advent of Code](https://adventofcode.com/).
 # Current state
 
 * 2017 - 12/25 tasks
-* 2018 - 3/25 tasks
+* 2018 - 2/25 tasks
 * 2019 - 10/25 tasks
 * 2020 - In progress!
 

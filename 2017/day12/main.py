@@ -8,9 +8,9 @@ class PipeVillage(object):
         with open(path, 'r') as f:
             for line in f:
                 node, links = [
-                    l.strip().replace('\n', '') for l in line.split('<->')
+                    link.strip().replace('\n', '') for link in line.split('<->')
                 ]
-                links = [int(l) for l in links.split(',')]
+                links = [int(link) for link in links.split(',')]
 
                 self.tree[int(node)] = links
 

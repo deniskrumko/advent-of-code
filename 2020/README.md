@@ -12,7 +12,7 @@ https://adventofcode.com/2020
 * Day 08 - ⭐⭐
 * Day 09 - ⭐⭐
 * Day 10 - ⭐⭐
-* Day 11 - dropped...
+* Day 11 - ⭐ and this is it
 * Day 12
 * Day 13
 * Day 14

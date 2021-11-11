@@ -1,19 +1,26 @@
-# Advent Of Code
+# 🎄 Advent Of Code 🎄
 
 Some python-powered solution for [Advent of Code](https://adventofcode.com/).
 
-# Current state
+Still humiliating this dog every year -> https://github.com/tatinacher/advent-of-code
 
-* 2017 - 12/25 tasks
-* 2018 - 2/25 tasks
-* 2019 - 10/25 tasks
-* 2020 - 10/25 tasks
+# Year to year progress
 
-# What's used
+Click on year to see detailed progress
+
+## [2017](https://github.com/deniskrumko/advent-of-code/tree/master/2017)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+## [2018](https://github.com/deniskrumko/advent-of-code/tree/master/2018)
+⭐⭐⭐⭐
+## [2019](https://github.com/deniskrumko/advent-of-code/tree/master/2019)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+## [2020](https://github.com/deniskrumko/advent-of-code/tree/master/2020)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+# Project requirements
 
 * Python 3.7
 * pytest >= 5.3.1
-* isort >= 4.3.21
 
 # How to run tests
 

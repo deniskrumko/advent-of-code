@@ -1,5 +1,7 @@
-from .main import get_stabilized_model, get_stabilized_model_count
-
+from .main import (
+    get_stabilized_model,
+    get_stabilized_model_count,
+)
 
 input_data = """
 L.LL.LL.LL

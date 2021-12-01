@@ -16,6 +16,8 @@ Click on year to see detailed progress
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 ## [2020](https://github.com/deniskrumko/advent-of-code/tree/master/2020)
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+## [2021](https://github.com/deniskrumko/advent-of-code/tree/master/2021)
+In progress
 
 # Project requirements
 

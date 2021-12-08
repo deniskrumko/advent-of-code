@@ -1,5 +1,5 @@
 def function(data: list):
-    ...
+    return True
 
 
 if __name__ == '__main__':

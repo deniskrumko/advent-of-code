@@ -21,12 +21,12 @@ In progress
 
 # Project requirements
 
-* Python 3.7
-* pytest >= 5.3.1
+* Python 3.9
+* pytest
 
 # How to run tests
 
 For example, you need to run tests for 2020 and day_01. Command will be:
 ```bash
-pytest 2020/day_01
+pytest 2021/day_01
 ```

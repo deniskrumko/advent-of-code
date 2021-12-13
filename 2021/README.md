@@ -12,7 +12,7 @@ https://adventofcode.com/2021
 * Day 08 - ⭐⭐
 * Day 09 - ⭐⭐
 * Day 10 - ⭐⭐
-* Day 11
+* Day 11 - ⭐⭐
 * Day 12
 * Day 13
 * Day 14

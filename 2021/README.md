@@ -15,7 +15,7 @@ https://adventofcode.com/2021
 * Day 11 - ⭐⭐
 * Day 12 - ⭐⭐
 * Day 13 - ⭐⭐
-* Day 14
+* Day 14 - ⭐ and that's all!
 * Day 15
 * Day 16
 * Day 17

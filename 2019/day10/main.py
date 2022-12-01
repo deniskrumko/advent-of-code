@@ -131,7 +131,7 @@ class MonitoringStation:
                 return 0
             if coord == (0, 1):
                 return 90
-            return math.degrees(math.atan(coord[1]/coord[0]))
+            return math.degrees(math.atan(coord[1] / coord[0]))
 
         p1 = list(reversed(sorted(list(res), key=myfunc)))
         p2 = [(i, -j) for i, j in p1]
@@ -152,7 +152,7 @@ if __name__ == '__main__':
         coordinates, count = ms.get_best_position()
         print(
             f'Best position for monitoring station is {coordinates}'
-            f' with {count} asteroids'
+            f' with {count} asteroids',
         )
 
         ms.run_vaporisation(station=coordinates)

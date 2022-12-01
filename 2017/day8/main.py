@@ -10,7 +10,7 @@ def operators_map(comp):
         '==': operator.eq,
         '!=': operator.ne,
         'inc': operator.add,
-        'dec': operator.sub
+        'dec': operator.sub,
     }
     return op_map[comp]
 
@@ -31,7 +31,7 @@ def main():
 
         if operators_map(compare)(registers[reg2], int(value2)):
             registers[reg1] = operators_map(action)(
-                registers[reg1], int(value1)
+                registers[reg1], int(value1),
             )
 
         highest_value = max(list(registers.values()))

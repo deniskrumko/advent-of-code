@@ -8,7 +8,7 @@ def lanternfish_cycle(data: list, days: int) -> int:
     """Imitate lanternfish life cycle."""
     fishes = Counter(data)
 
-    for day in range(days):
+    for _ in range(days):
         new_fishes = defaultdict(int)
         for fish_age, fish_number in fishes.items():
             if fish_age == 0:

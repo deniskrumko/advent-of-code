@@ -15,7 +15,7 @@ input_data = """
 #.##...#...
 #...##....#
 .#..#...#.#
-""".split()
+""".split()  # noqa
 
 
 def test_traverse_map():

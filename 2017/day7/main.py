@@ -1,4 +1,4 @@
-class Node(object):
+class Node:
 
     def __init__(self, weight=None, parent=None):
         self.weight = weight

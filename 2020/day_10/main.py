@@ -34,7 +34,7 @@ def count_solutions_by_recursive(input_data: str) -> int:
             if new_value in values:
                 counter = walk(values.index(new_value), counter)
 
-        return counter + bool(position == len(values) - 1)
+        return counter + (position == (len(values) - 1))
 
     return walk()
 

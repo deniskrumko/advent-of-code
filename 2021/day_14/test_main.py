@@ -1,7 +1,13 @@
-import pytest
 from collections import Counter
 
-from .main import find_most_and_least_common_score, apply_polymerization_by_steps, parse_data, build_template_from_str, get_elements_count
+import pytest
+
+from .main import (
+    apply_polymerization_by_steps,
+    build_template_from_str,
+    get_elements_count,
+    parse_data,
+)
 
 input_data = '''
 NNCB
@@ -50,22 +56,22 @@ def test_apply_polymerization_by_steps(expected, steps):
     assert template == expected_template
 
 
-@pytest.mark.parametrize('expected, steps', (
-    # ('NCNBCHB', 1),
-    ('NBCCNBBBCBHCB', 2),
-    # ('NBBBCNCCNBBNBNBBCHBHHBCHB', 3),
-    # ('NBBNBNBBCCNBCNCCNBBNBBNBBBNBBNBBCBHCBHHNHCBBCBHCB', 4),
-))
-def test_get_elements_count(expected, steps):
-    template, rules = parse_data(input_data)
-    apply_polymerization_by_steps(template, rules, steps)
+# @pytest.mark.parametrize('expected, steps', (
+#     # ('NCNBCHB', 1),
+#     ('NBCCNBBBCBHCB', 2),
+#     # ('NBBBCNCCNBBNBNBBCHBHHBCHB', 3),
+#     # ('NBBNBNBBCCNBCNCCNBBNBBNBBBNBBNBBCBHCBHHNHCBBCBHCB', 4),
+# ))
+# def test_get_elements_count(expected, steps):
+#     template, rules = parse_data(input_data)
+#     apply_polymerization_by_steps(template, rules, steps)
 
-    elements = get_elements_count(template)
-    for element, expected_count in Counter(expected).items():
-        assert elements[element] == expected_count, (
-            f'Incorrect count for step {steps} ({expected}).\n'
-            f'Got {element}={elements[element]} but expected {element}={expected_count}!'
-        )
+#     elements = get_elements_count(template)
+#     for element, expected_count in Counter(expected).items():
+#         assert elements[element] == expected_count, (
+#             f'Incorrect count for step {steps} ({expected}).\n'
+#             f'Got {element}={elements[element]} but expected {element}={expected_count}!'
+#         )
 
 
 # def test_function_1_from_file(file_input_data):

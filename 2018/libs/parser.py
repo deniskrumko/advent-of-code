@@ -7,19 +7,19 @@ class ArgsParser():
     def __init__(self):
         """Initialize class instance."""
         self.parser = ArgumentParser(
-            epilog='2018 (c) Denis Krumko'
+            epilog='2018 (c) Denis Krumko',
         )
         self.parser.add_argument(
             'solution',
             type=str,
             metavar='<day>.<part>',
-            help='Number of day and part (1.1 for example)'
+            help='Number of day and part (1.1 for example)',
         )
         self.parser.add_argument(
             '-t',
             '--test',
             action='store_true',
-            help='Run tests'
+            help='Run tests',
         )
 
     def get_arguments(self):

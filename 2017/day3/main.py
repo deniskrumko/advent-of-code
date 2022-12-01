@@ -1,5 +1,5 @@
 
-class ManhattanDistance(object):
+class ManhattanDistance:
     """Class for calculation of manhattan distance for spiral stored numbers"""
 
     def __init__(self, number):
@@ -59,7 +59,7 @@ class ManhattanDistance(object):
         return abs(coordinates[0]) + abs(coordinates[1])
 
 
-class AdjacentSquares(object):
+class AdjacentSquares:
 
     def __init__(self, end_number):
         """Initialization method."""

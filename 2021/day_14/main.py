@@ -1,10 +1,13 @@
-from collections import Counter, defaultdict
+from collections import (
+    Counter,
+    defaultdict,
+)
 
 
 def build_template_from_str(template_str: str) -> dict:
     template = defaultdict(int)
     for i in range(len(template_str) - 1):
-        pair = template_str[i:i+2]
+        pair = template_str[i:i + 2]
         assert len(pair) == 2
         template[pair] += 1
     return template
@@ -37,7 +40,6 @@ def apply_polymerization_by_steps(template: dict, rules: dict, steps: int) -> No
 
 
 def get_elements_count(template: dict) -> dict:
-    breakpoint() # FIXME: Breakpoint
     elements = defaultdict(int)
     last_element = None
 
@@ -58,7 +60,7 @@ def find_most_and_least_common_score(data: list, steps: int = 10) -> int:
 
     # Find most and least common elements and get result score
     elements = get_elements_count(template)
-    breakpoint() # FIXME: Breakpoint
+
     elements = Counter(template)
     least_common, *_, most_common = sorted(elements, key=lambda x: elements[x])
     return elements[most_common] - elements[least_common]

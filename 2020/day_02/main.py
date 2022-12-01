@@ -23,7 +23,7 @@ def check_password_policy(line: str) -> bool:
 def check_updated_password_policy(line: str) -> bool:
     """Check password policy (second variant)."""
     policy_a, policy_b, character, password = extract_policy_and_password(line)
-    return sum(password[i-1] == character for i in (policy_a, policy_b)) == 1
+    return sum(password[i - 1] == character for i in (policy_a, policy_b)) == 1
 
 
 def count_passwords(check_function: Callable, input_data: list) -> int:

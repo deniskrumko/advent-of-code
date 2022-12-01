@@ -22,7 +22,7 @@ def captcha_1(puzzle):
 
 def captcha_2(puzzle):
     """Second captcha compares to `len(puzzle)//2` digit in string."""
-    return base_captcha(puzzle=puzzle, increment=len(puzzle)//2)
+    return base_captcha(puzzle=puzzle, increment=len(puzzle) // 2)
 
 
 def main():

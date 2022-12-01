@@ -1,7 +1,7 @@
 import re
 
 
-class StreamProcessing(object):
+class StreamProcessing:
 
     def __init__(self, puzzle):
         """Initialization method."""
@@ -83,7 +83,7 @@ if __name__ == '__main__':
         '<{!>}>': 2,
         '<!!>': 0,
         '<!!!>>': 0,
-        '<{o"i!a,<{i<a>': 10
+        '<{o"i!a,<{i<a>': 10,
     }
 
     for test, result in tests.items():

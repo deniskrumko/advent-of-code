@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     """Base class for solutions."""
 
     data_file = None

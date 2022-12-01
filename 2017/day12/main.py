@@ -1,4 +1,4 @@
-class PipeVillage(object):
+class PipeVillage:
     """Docstring"""
 
     def __init__(self, path):

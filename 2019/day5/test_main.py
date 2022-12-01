@@ -25,6 +25,4 @@ def test_intcode_computer(input_code, evaluated, input_value):
     (large_example, 1001, 20),
 ])
 def test_output_of_intcode_computer(input_code, last_output, input_value):
-    assert IntCodeComputer(
-        input_code, inputs=[input_value]
-    ).run() == last_output
+    assert IntCodeComputer(input_code, inputs=[input_value]).run() == last_output

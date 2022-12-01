@@ -29,7 +29,7 @@ class WireConnector:
         """Get minimal steps to intersection."""
         self.results = {}
 
-        for index, route in enumerate(self.routes):
+        for route in self.routes:
             for distance, cur in enumerate(self.walk_the_route(route), 1):
                 if cur in self.intersections:
                     self.results.setdefault(cur, 0)
@@ -58,7 +58,7 @@ class WireConnector:
         for step in route.split(','):
             direction, distance = step[0], int(step[1:])
             move = self.directions[direction]
-            for d in range(distance):
+            for _ in range(distance):
                 cur = (cur[0] + move[0], cur[1] + move[1])
                 yield cur
 

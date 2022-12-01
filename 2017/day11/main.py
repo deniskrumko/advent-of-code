@@ -1,4 +1,4 @@
-class HexMap(object):
+class HexMap:
     """Docstring"""
 
     sides = ['n', 'ne', 'se', 's', 'sw', 'nw']
@@ -68,7 +68,7 @@ if __name__ == '__main__':
         'ne,ne,ne': 3,
         'ne,ne,sw,sw': 0,
         'ne,ne,s,s': 2,
-        'se,sw,se,sw,sw': 3
+        'se,sw,se,sw,sw': 3,
     }
 
     for test, result in tests.items():

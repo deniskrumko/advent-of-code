@@ -20,7 +20,7 @@ class SpaceImageFormatDecoder:
         for j in range(len(self.data) // layer_chunk):
             chunk = self.data[layer_chunk * j: layer_chunk * (j + 1)]
             layer = [
-                chunk[self.width * i: self.width * (i+1)]
+                chunk[self.width * i: self.width * (i + 1)]
                 for i in range(self.height)
             ]
             result.append(layer)

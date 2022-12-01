@@ -30,7 +30,7 @@ def get_max_seat_id(boarding_passes: list) -> int:
 def get_missing_seat_ids(boarding_passes: list) -> set:
     """Get missing seat ids from list of boarding passes."""
     seat_ids = {get_seat_id(boarding_pass) for boarding_pass in boarding_passes}
-    all_seat_ids = set(range(min(seat_ids), max(seat_ids)+1))
+    all_seat_ids = set(range(min(seat_ids), max(seat_ids) + 1))
     return all_seat_ids - seat_ids
 
 

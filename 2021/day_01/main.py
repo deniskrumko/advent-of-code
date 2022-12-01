@@ -1,6 +1,6 @@
 def count_measurement_increases(data: list):
     """Count measurement increases only."""
-    return sum(data[i] > data[i-1] for i in range(1, len(data)))
+    return sum(data[i] > data[i - 1] for i in range(1, len(data)))
 
 
 def count_sliding_window_measurement_increases(data: list, window: int = 3):

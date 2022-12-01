@@ -1,7 +1,7 @@
 from .registry import registry
 
 
-class TestCase(object):
+class TestCase:
     """Base test case class."""
 
     @property

@@ -2,7 +2,7 @@ import operator
 from functools import reduce
 
 
-class KnotHash(object):
+class KnotHash:
     """Docstring"""
 
     def __init__(self, puzzle, numbers_range=256, make_ascii=True):
@@ -28,12 +28,12 @@ class KnotHash(object):
     def get_hash(self):
         self.puzzle += [17, 31, 73, 47, 23]
 
-        for i in range(64):
+        for _ in range(64):
             self.make_round()
 
         dense = []
         for i in range(16):
-            dense.append(KnotHash.xor_block(self.list[i*16:(i+1)*16]))
+            dense.append(KnotHash.xor_block(self.list[i * 16:(i + 1) * 16]))
 
         return KnotHash.to_hex(dense)
 
@@ -70,7 +70,7 @@ if __name__ == '__main__':
     assert KnotHash.to_ascii('1,2,3') == [49, 44, 50, 44, 51]
 
     assert KnotHash.xor_block([
-        65, 27, 9, 1, 4, 3, 40, 50, 91, 7, 6, 0, 2, 5, 68, 22
+        65, 27, 9, 1, 4, 3, 40, 50, 91, 7, 6, 0, 2, 5, 68, 22,
     ]) == 64
 
     assert KnotHash.to_hex([64, 7, 255]) == '4007ff'

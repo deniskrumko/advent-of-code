@@ -24,7 +24,7 @@ def parse_line(line: str) -> tuple:
                 found = True
 
         if not found:
-            is_incomplete = all(bool(value in LEFT_ONLY) for value in line)
+            is_incomplete = all(value in LEFT_ONLY for value in line)
             success = None if is_incomplete else False
             break
 

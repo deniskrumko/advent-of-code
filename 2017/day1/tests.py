@@ -9,7 +9,7 @@ def tests():
         '1122': 3,
         '1111': 4,
         '1234': 0,
-        '91212129': 9
+        '91212129': 9,
     }
 
     for puzzle, result in captcha_1_tests.items():
@@ -20,7 +20,7 @@ def tests():
         '1221': 0,
         '123425': 4,
         '123123': 12,
-        '12131415': 4
+        '12131415': 4,
     }
 
     for puzzle, result in captcha_2_tests.items():

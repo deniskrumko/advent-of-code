@@ -1,10 +1,10 @@
-from main import (
+from .main import (
     AdjacentSquares,
     ManhattanDistance,
 )
 
 
-def tests():
+def test_manhattan_distance():
     distance_tests = {
         1: 0,
         12: 3,
@@ -15,6 +15,8 @@ def tests():
     for test, result in distance_tests.items():
         assert ManhattanDistance(test).result == result
 
+
+def test_adjacent_squares():
     adjacent_squares_tests = {
         4: 5,
         5: 10,
@@ -23,13 +25,7 @@ def tests():
         23: 25,
         25: 26,
         747: 806,
-        # ...
     }
 
     for test, result in adjacent_squares_tests.items():
         assert AdjacentSquares(test).result == result
-
-
-if __name__ == '__main__':
-    tests()
-    print('\nTests were successfully completed!')

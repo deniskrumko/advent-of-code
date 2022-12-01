@@ -1,10 +1,10 @@
-from main import (
+from .main import (
     passphrase_check_1,
     passphrase_check_2,
 )
 
 
-def tests():
+def test_passphrase_1():
     passphrase_1_tests = {
         'aa bb cc dd ee': True,
         'aa bb cc dd aa': False,
@@ -14,6 +14,8 @@ def tests():
     for test, result in passphrase_1_tests.items():
         assert passphrase_check_1(test) == result
 
+
+def test_passphrase_2():
     passphrase_2_tests = {
         'abcde fghij': True,
         'abcde xyz ecdab': False,
@@ -24,8 +26,3 @@ def tests():
 
     for test, result in passphrase_2_tests.items():
         assert passphrase_check_2(test) == result
-
-
-if __name__ == '__main__':
-    tests()
-    print('\nTests were successfully completed!')

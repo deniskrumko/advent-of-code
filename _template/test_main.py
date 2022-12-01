@@ -7,7 +7,7 @@ input_data = []
 
 @pytest.fixture
 def file_input_data():
-    with open('2021/day_XX/input.txt', 'r') as f:
+    with open('2022/day_XX/input.txt', 'r') as f:
         return [line.strip() for line in f.readlines()]
 
 

@@ -18,11 +18,17 @@ Click on year to see detailed progress
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 ## [2021](https://github.com/deniskrumko/advent-of-code/tree/master/2021)
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+## [2022](https://github.com/deniskrumko/advent-of-code/tree/master/2022)
+⭐⭐
 
 # Project requirements
 
-* Python 3.9
+* Python 3.10.6 (upd. 2022-12-01)
 * pytest
+
+```bash
+pip install -r requirements.txt
+```
 
 # How to run tests
 

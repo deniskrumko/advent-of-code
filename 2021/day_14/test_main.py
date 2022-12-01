@@ -1,11 +1,8 @@
-from collections import Counter
-
 import pytest
 
 from .main import (
     apply_polymerization_by_steps,
     build_template_from_str,
-    get_elements_count,
     parse_data,
 )
 

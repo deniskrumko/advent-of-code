@@ -1,6 +1,7 @@
 import pytest
 
 from .main import (
+    INPUT_FILE,
     max_calories,
     top_calories,
 )
@@ -20,26 +21,26 @@ input_data = """
 9000
 
 10000
-""".strip().split('\n')
+""".strip()
 
 
 @pytest.fixture
 def file_input_data():
-    with open('2022/day_01/input.txt', 'r') as f:
-        return [line.strip() for line in f.readlines()]
+    with open(INPUT_FILE, 'r') as f:
+        return f.read()
 
 
-def test_function_1():
+def test_max_calories():
     assert max_calories(input_data) == 24000
 
 
-def test_function_1_from_file(file_input_data):
+def test_max_calories_from_file(file_input_data):
     assert max_calories(file_input_data) == 71506
 
 
-def test_function_2():
+def test_top_calories():
     assert top_calories(input_data) == 45000
 
 
-def test_function_2_from_file(file_input_data):
+def test_top_calories_from_file(file_input_data):
     assert top_calories(file_input_data) == 209603

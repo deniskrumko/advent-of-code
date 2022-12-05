@@ -8,7 +8,7 @@ from .main import (
 
 input_data = """
 
-""".strip()
+""".strip('\n')
 
 
 @pytest.fixture

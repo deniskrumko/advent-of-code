@@ -3,11 +3,13 @@ from pathlib import Path
 INPUT_FILE = Path(__file__).parent / 'input.txt'
 
 
-def function_1(data: str):
+def function_1(data: str) -> bool:
+    """Get result for puzzle (part 1)."""
     return True
 
 
-def function_2(data: str):
+def function_2(data: str) -> bool:
+    """Get result for puzzle (part 2)."""
     return True
 
 

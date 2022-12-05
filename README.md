@@ -4,6 +4,8 @@ Some python-powered solution for [Advent of Code](https://adventofcode.com/).
 
 Still humiliating this dog every year -> https://github.com/tatinacher/advent-of-code
 
+Bonus: [LeetCode 🔥](https://github.com/deniskrumko/advent-of-code/tree/master/_leetcode)
+
 # Year to year progress
 
 Click on year to see detailed progress

@@ -19,7 +19,7 @@ def main():
     new_folder = f'{latest_year}/day_{str(new_day_number).zfill(2)}'
 
     shutil.copytree(TEMPLATE_DIR, new_folder)
-    print(f'Folder created: {new_folder}')
+    print(f'Directory created: {new_folder}')
 
 
 if __name__ == '__main__':

@@ -6,7 +6,7 @@ Still humiliating this dog every year -> https://github.com/tatinacher/advent-of
 
 Bonus: [LeetCode 🔥](https://github.com/deniskrumko/advent-of-code/tree/master/_leetcode)
 
-# Year to year progress
+# Year to year progress 📈
 
 Click on year to see detailed progress
 
@@ -23,7 +23,7 @@ Click on year to see detailed progress
 ## [2022](https://github.com/deniskrumko/advent-of-code/tree/master/2022)
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
-# Project requirements
+# Project requirements 🛠️
 
 * Python 3.10.6 (upd. 2022-12-01)
 * pytest
@@ -32,15 +32,33 @@ Click on year to see detailed progress
 pip install -r requirements.txt
 ```
 
-# How to create new dir for new task
+# How to create new dir for new task 📂
 
+Run following command to automatically create new dir for puzzle (placed inside latest year dir):
 ```bash
 ./template.py
 ```
 
-# How to run tests
-
-For example, you need to run tests for 2020 and day_01. Command will be:
+Output will be like:
 ```bash
-pytest 2021/day_01
+Directory created: 2022/day_08
+```
+
+# How to run solutions/tests 🏃‍♀️
+
+To get puzzle results for specific day (for example, `2022/day_01`), run command:
+
+```bash
+python3 2022/day_01/main.py
+```
+
+Output will be like this:
+```bash
+Your result (1): 71506
+Your result (2): 209603
+```
+
+And if you need to run tests for same day, run command:
+```bash
+pytest 2022/day_01
 ```

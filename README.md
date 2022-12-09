@@ -26,7 +26,7 @@ Click on year to see detailed progress
 # Project requirements 🛠️
 
 * Python 3.10.6 (upd. 2022-12-01)
-* pytest
+* numpy & pytest
 
 ```bash
 pip install -r requirements.txt

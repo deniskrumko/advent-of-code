@@ -2,6 +2,8 @@
 
 https://adventofcode.com/2022
 
+**Total: 21 stars**
+
 * Day 01 - ⭐⭐
 * Day 02 - ⭐⭐
 * Day 03 - ⭐⭐
@@ -12,7 +14,7 @@ https://adventofcode.com/2022
 * Day 08 - ⭐⭐
 * Day 09 - ⭐⭐
 * Day 10 - ⭐⭐
-* Day 11
+* Day 11 - ⭐
 * Day 12
 * Day 13
 * Day 14

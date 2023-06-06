@@ -21,9 +21,9 @@ def function_1(data: str, rounds: int = 20, divide: bool = True) -> bool:
     """Get result for puzzle (part 1)."""
     monkeys = [parse_m(m) for m in data.split('\n\n')]
     stats = defaultdict(int)
-    for i in range(rounds):
+    for _ in range(rounds):
         for im, m in enumerate(monkeys):
-            for i in m['items']:
+            for _ in m['items']:
                 stats[im] += 1
                 new_level = eval(m['operation'].replace('old', 'i'))
                 if divide:

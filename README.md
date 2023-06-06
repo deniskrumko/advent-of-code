@@ -2,26 +2,32 @@
 
 Some python-powered solution for [Advent of Code](https://adventofcode.com/).
 
-Still humiliating this dog every year -> https://github.com/tatinacher/advent-of-code
+Still humiliating this dog every year → https://github.com/tatinacher/advent-of-code
 
-Bonus: [LeetCode 🔥](https://github.com/deniskrumko/advent-of-code/tree/master/_leetcode)
+# ✨ _bonus_code ✨
+
+Also this project is a place where I store my solutions for other problems, like these:
+
+- [LeetCode](https://github.com/deniskrumko/advent-of-code/tree/master/_leetcode)
+- [Grokking Algorithms](https://github.com/deniskrumko/advent-of-code/tree/master/_grokking)
+- [Yandex Academy](https://github.com/deniskrumko/advent-of-code/tree/master/_yandex)
 
 # Year to year progress 📈
 
-Click on year to see detailed progress
+Click on year to see detailed progress of Advent of Code:
 
-## [2017](https://github.com/deniskrumko/advent-of-code/tree/master/2017)
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
-## [2018](https://github.com/deniskrumko/advent-of-code/tree/master/2018)
-⭐⭐⭐⭐
-## [2019](https://github.com/deniskrumko/advent-of-code/tree/master/2019)
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
-## [2020](https://github.com/deniskrumko/advent-of-code/tree/master/2020)
+- [2022](https://github.com/deniskrumko/advent-of-code/tree/master/2022)
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
-## [2021](https://github.com/deniskrumko/advent-of-code/tree/master/2021)
+- [2021](https://github.com/deniskrumko/advent-of-code/tree/master/2021)
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
-## [2022](https://github.com/deniskrumko/advent-of-code/tree/master/2022)
+- [2020](https://github.com/deniskrumko/advent-of-code/tree/master/2020)
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+- [2019](https://github.com/deniskrumko/advent-of-code/tree/master/2019)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+- [2018](https://github.com/deniskrumko/advent-of-code/tree/master/2018)
+⭐⭐⭐⭐
+- [2017](https://github.com/deniskrumko/advent-of-code/tree/master/2017)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
 # Project requirements 🛠️
 

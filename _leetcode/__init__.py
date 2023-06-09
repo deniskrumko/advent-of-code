@@ -1,4 +1,6 @@
+import os
 import time
+from pathlib import Path
 
 
 def measure_execution_speed(func1, func2, num_iterations=1000, **kwargs):
@@ -29,3 +31,24 @@ def measure_function_execution_time(func, num_iterations, **kwargs):
         execution_time = end_time - start_time
         total_time += execution_time
     return total_time
+
+
+def new_problem():
+    cur_dir = Path('_leetcode')
+    name = input('Problem name: ')
+    slug = '_'.join(w.lower() for w in name.split())
+
+    last_task = 0
+    for filename in os.listdir(cur_dir):
+        number = filename.split('_')[0]
+        if number.isdigit() and int(number) > last_task:
+            last_task = int(number)
+
+    new_task_name = f'{str(last_task + 1).zfill(3)}_{slug}.py'
+    filepath = cur_dir / new_task_name
+    filepath.touch()
+    print(filepath)
+
+
+if __name__ == '__main__':
+    new_problem()

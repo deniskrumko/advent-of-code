@@ -19,7 +19,7 @@ def bubble_sort(array, flag=True):
 
     - Memory: O(1)
     - Best case: O(n)
-    - Worst case: O(n * n)
+    - Worst case: O(n ^ 2)
     """
     while flag:
         flag = False
@@ -30,6 +30,34 @@ def bubble_sort(array, flag=True):
     return array
 
 
+def shake_sort(array):
+    """Shaje sort.
+
+    Sort by swapping in-place goind left-right-left-...
+
+    - Memory: O(1)
+    - Best case: O(n)
+    - Worst case: O(n ^ 2)
+    """
+    if len(array) < 2:
+        return array
+
+    left = 0
+    right = len(array) - 1
+
+    while left <= right:
+        for i in range(left, right, 1):
+            if array[i] > array[i + 1]:
+                array[i], array[i + 1] = array[i + 1], array[i]
+        right -= 1
+        for i in range(right, left, -1):
+            if array[i - 1] > array[i]:
+                array[i], array[i - 1] = array[i - 1], array[i]
+        left += 1
+
+    return array
+
+
 def quick_sort(array) -> list:
     """Quick sort.
 
@@ -37,7 +65,7 @@ def quick_sort(array) -> list:
 
     - Memory: O(1)
     - Best case: O(n * log(n))
-    - Worst case: O(n * n)
+    - Worst case: O(n ^ 2)
     """
     array_len = len(array)
     if array_len < 2:
@@ -60,7 +88,7 @@ def quick_sort_with_rand(array) -> list:
 
     - Memory: O(1)
     - Best case: O(n * log(n))
-    - Worst case: O(n * n)
+    - Worst case: O(n ^ 2)
     """
     array_len = len(array)
     if array_len < 2:
@@ -82,7 +110,7 @@ def quick_sort_chatgpt(arr):
 
     - Memory: O(1)
     - Best case: O(n * log(n))
-    - Worst case: O(n * n)
+    - Worst case: O(n ^ 2)
     """
     if len(arr) <= 1:
         return arr
@@ -102,7 +130,7 @@ def quick_sort_with_rand_and_optimization(array) -> list:
 
     - Memory: O(1)
     - Best case: O(n * log(n))
-    - Worst case: O(n * n)
+    - Worst case: O(n ^ 2)
     """
     array_len = len(array)
     if array_len < 2:
@@ -118,6 +146,7 @@ def quick_sort_with_rand_and_optimization(array) -> list:
 
 @pytest.mark.parametrize('sorting_func', (
     bubble_sort,
+    shake_sort,
     quick_sort,
     quick_sort_with_rand,
     quick_sort_chatgpt,
@@ -125,7 +154,12 @@ def quick_sort_with_rand_and_optimization(array) -> list:
 ))
 def test_all_sorting_algorithms(rand_array, sorting_func):
     time_start = time.time()
-    sort_result = sorting_func(rand_array[:])
+
+    try:
+        sort_result = sorting_func(rand_array[:])
+    except Exception as e:
+        raise ValueError(f'Algorithm {sorting_func.__name__} failed: {e!r}')
+
     time_end = time.time()
     print(f'\n\tOperation done in {time_end - time_start:.5f} seconds')
     assert sort_result == sorted(rand_array[:])

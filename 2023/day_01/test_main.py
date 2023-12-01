@@ -7,7 +7,20 @@ from .main import (
 )
 
 input_data = """
+1abc2
+pqr3stu8vwx
+a1b2c3d4e5f
+treb7uchet
+""".strip('\n')
 
+input_data_2 = """
+two1nine
+eightwothree
+abcone2threexyz
+xtwone3four
+4nineeightseven2
+zoneight234
+7pqrstsixteen
 """.strip('\n')
 
 
@@ -19,21 +32,17 @@ def file_input_data():
 
 # TESTS
 
-@pytest.mark.skip('Not ready')
 def test_function_1():
-    assert function_1(input_data)
+    assert function_1(input_data) == 142
 
 
-@pytest.mark.skip('Not ready')
 def test_function_1_from_file(file_input_data):
-    assert function_1(file_input_data)
+    assert function_1(file_input_data) == 53921
 
 
-@pytest.mark.skip('Not ready')
 def test_function_2():
-    assert function_2(input_data)
+    assert function_2(input_data_2) == 281
 
 
-@pytest.mark.skip('Not ready')
 def test_function_2_from_file(file_input_data):
-    assert function_2(file_input_data)
+    assert function_2(file_input_data) == 54676

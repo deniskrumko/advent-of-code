@@ -89,12 +89,12 @@ class AdjacentSquares:
 
         for direction in existing:
             coordinate = self.coord(direction)
-            if not self.spiral.get(coordinate, None):
+            if not self.spiral.get(coordinate):
                 return False
 
         for direction in not_existing:
             coordinate = self.coord(direction)
-            if self.spiral.get(coordinate, None):
+            if self.spiral.get(coordinate):
                 return False
 
         return True
@@ -135,7 +135,7 @@ class AdjacentSquares:
                     continue
 
                 coord = self.get_coordinates_sum(self.coordinates, (i, j))
-                number = self.spiral.get(coord, None)
+                number = self.spiral.get(coord)
                 if number:
                     result_sum += number
 

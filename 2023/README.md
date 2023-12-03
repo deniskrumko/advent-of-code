@@ -2,11 +2,11 @@
 
 https://adventofcode.com/2023
 
-**Total: 4 stars**
+**Total: 6 stars**
 
 * Day 01 - ⭐⭐
 * Day 02 - ⭐⭐
-* Day 03 -
+* Day 03 - ⭐⭐
 * Day 04 -
 * Day 05 -
 * Day 06 -

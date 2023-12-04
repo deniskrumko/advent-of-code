@@ -3,9 +3,9 @@
 https://adventofcode.com/2023
 
 Time hints:
-- **RTA (Real Time Attack)** - How much of my own time I spent on puzzle
-- **WORLD P1 (World Statistics for part 1)** - Time from leaderboard + score
-- **WORLD P2 (World Statistics for part 2)** - Time from leaderboard + score
+- **RTA (Real Time Attack)** - How much of my own time I spent on puzzle (part 1+2)
+- **WORLD P1** - Time from leaderboard + score (part 1)
+- **WORLD P2** - Time from leaderboard + score (part 1+2)
 
 **Total: 8 stars**
 

@@ -25,9 +25,9 @@ def function_2(data: str) -> bool:
     cards_dict = defaultdict(lambda: 1)  # counts copies of each card
     for i, line in enumerate(data.splitlines(), 1):
         winning = count_winning_numbers(line)
-        existing_copies = cards_dict[i]
+        i_count = cards_dict[i]  # this line is needed to init defaultdict
         for j in range(1, winning + 1):
-            cards_dict[i + j] += existing_copies
+            cards_dict[i + j] += i_count
     return sum(cards_dict.values())
 
 

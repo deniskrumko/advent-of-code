@@ -7,7 +7,7 @@ Time hints:
 - **WORLD P1** - Time from leaderboard + score (part 1)
 - **WORLD P2** - Time from leaderboard + score (part 1+2)
 
-**Total: 27 stars**
+**Total: 31 stars**
 
 * Day 01 - ⭐⭐ (RTA `XX:XX;XX`, WORLD P1 `01:00:21` **13549**, WORLD P2 `02:07:00` **11808**)
 * Day 02 - ⭐⭐ (RTA `00:20:19`, WORLD P1 `00:14:54` **2834** , WORLD P2 `00:20:19` **2928**)
@@ -23,3 +23,6 @@ Time hints:
 * Day 12 - ⭐ (Second part not solved...)
 * Day 13 - ⭐⭐ (I am off the race, no RTA counting since that day)
 * Day 14 - ⭐⭐
+* Day 15 - ⭐⭐
+* Day 16 - ⭐⭐
+* Day 17 - SKIPPED

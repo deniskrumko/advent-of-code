@@ -26,3 +26,5 @@ Time hints:
 * Day 15 - ⭐⭐
 * Day 16 - ⭐⭐
 * Day 17 - SKIPPED
+* Day 18 - ⭐
+* Day 19 - ⭐

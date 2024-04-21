@@ -45,16 +45,23 @@ class Solution2:
         return c
 
 
-@pytest.mark.parametrize(
-    "nums, expected_nums, expected_k",
-    [
-        ([1,1,1,2,2,3], [1,1,2,2,3], 5),  # noqa
-        ([0,0,1,1,1,1,2,3,3], [0,0,1,1,2,3,3], 7),  # noqa
-    ],
-)
-def test_removeElement(nums, expected_nums, expected_k):
-    for s in [Solution1, Solution2]:
-        n = nums[:]
-        k = s().removeDuplicates(n)
-        assert k == expected_k, f'Failed {s}, check 1'
-        assert sorted(n[:k]) == sorted(expected_nums), f'Failed {s}, check 2'
+TEST_CASES = [
+    ([1,1,1,2,2,3], [1,1,2,2,3], 5),  # noqa
+    ([0,0,1,1,1,1,2,3,3], [0,0,1,1,2,3,3], 7),  # noqa
+]
+
+
+@pytest.mark.parametrize("nums, expected_nums, expected_k", TEST_CASES)
+def test_Solution1(nums, expected_nums, expected_k):
+    n = nums[:]
+    k = Solution1().removeDuplicates(n)
+    assert k == expected_k
+    assert sorted(n[:k]) == sorted(expected_nums)
+
+
+@pytest.mark.parametrize("nums, expected_nums, expected_k", TEST_CASES)
+def test_Solution2(nums, expected_nums, expected_k):
+    n = nums[:]
+    k = Solution2().removeDuplicates(n)
+    assert k == expected_k
+    assert sorted(n[:k]) == sorted(expected_nums)

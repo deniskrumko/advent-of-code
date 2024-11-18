@@ -15,7 +15,8 @@ Also this project is a place where I store my solutions for other problems, like
 # Year to year progress 📈
 
 Click on year to see detailed progress of Advent of Code:
-
+- [2023](https://github.com/deniskrumko/advent-of-code/tree/master/2023)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 - [2022](https://github.com/deniskrumko/advent-of-code/tree/master/2022)
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 - [2021](https://github.com/deniskrumko/advent-of-code/tree/master/2021)

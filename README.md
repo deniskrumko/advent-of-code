@@ -15,6 +15,8 @@ Also this project is a place where I store my solutions for other problems, like
 # Year to year progress 📈
 
 Click on year to see detailed progress of Advent of Code:
+- [2024](https://github.com/deniskrumko/advent-of-code/tree/master/2024)
+IN PROGRESS
 - [2023](https://github.com/deniskrumko/advent-of-code/tree/master/2023)
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 - [2022](https://github.com/deniskrumko/advent-of-code/tree/master/2022)
@@ -36,14 +38,14 @@ Click on year to see detailed progress of Advent of Code:
 * numpy & pytest
 
 ```bash
-pip install -r requirements.txt
+make deps
 ```
 
 # How to create new dir for new task 📂
 
 Run following command to automatically create new dir for puzzle (placed inside latest year dir):
 ```bash
-./template.py
+make template
 ```
 
 Output will be like:

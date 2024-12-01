@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Create new folder using template.
 
-RUN: ./template.py
+make new
 """
 
 import os
@@ -10,7 +10,7 @@ import shutil
 TEMPLATE_DIR = '_template'
 
 
-def main():
+def make_template():
     latest_year = sorted(f for f in os.listdir() if f.isdigit())[-1]
     days = sorted(f for f in os.listdir(latest_year) if f.startswith('day_'))
     latest_day = days[-1] if days else 'day_00'
@@ -23,4 +23,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    make_template()

@@ -5,6 +5,8 @@ from .main import (
     function_1,
     function_2,
     is_safe_report,
+    is_safe_report_with_errors,
+    parse_report,
 )
 
 input_data = """
@@ -32,10 +34,12 @@ def file_input_data():
     ('9 7 6 2 1', False),
     ('1 3 2 4 5', False),
     ('8 6 4 4 1', False),
-    ('1 3 6 7 9', True,)
+    ('1 3 6 7 9', True),
 ))
 def test_is_safe_report(value, expected):
-    assert is_safe_report(value, problem_damp=False) == expected
+    report = parse_report(value)
+    assert is_safe_report(report) == expected
+
 
 @pytest.mark.parametrize('value, expected', (
     ('7 6 4 2 1', True),
@@ -49,8 +53,9 @@ def test_is_safe_report(value, expected):
     ('1 2 3 91 5', True),
     ('1 2 1 3 4', True),
 ))
-def test_is_safe_report_with_problem_damp(value, expected):
-    assert is_safe_report(value, problem_damp=True) == expected
+def test_is_safe_report_with_errors(value, expected):
+    report = parse_report(value)
+    assert is_safe_report_with_errors(report) == expected
 
 
 def test_function_1():

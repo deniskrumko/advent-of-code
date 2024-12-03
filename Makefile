@@ -1,4 +1,4 @@
-CURRENT_DAY = 2024/day_02
+CURRENT_DAY = 2024/day_03
 
 # Install dependencies
 deps:

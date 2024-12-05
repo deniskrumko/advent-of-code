@@ -8,6 +8,7 @@ import os
 import shutil
 
 TEMPLATE_DIR = '_template'
+MAKEFILE_PATH = 'Makefile'
 
 
 def make_template():
@@ -20,6 +21,12 @@ def make_template():
 
     shutil.copytree(TEMPLATE_DIR, new_folder)
     print(f'Directory created: {new_folder}')
+
+    with open(MAKEFILE_PATH, 'r') as f:
+        data = f.readlines()
+
+    with open(MAKEFILE_PATH, 'w') as f:
+        f.writelines([f'CURRENT_DAY = {new_folder}\n'] + data[1:])
 
 
 if __name__ == '__main__':

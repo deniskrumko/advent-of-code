@@ -1,6 +1,6 @@
-from pathlib import Path
 from dataclasses import dataclass
 from functools import cached_property
+from pathlib import Path
 
 INPUT_FILE = Path(__file__).parent / 'input.txt'
 

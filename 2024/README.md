@@ -2,7 +2,7 @@
 
 https://adventofcode.com/2024
 
-**Total: 16 stars**
+**Total: 18 stars**
 
 * Day 01 - ⭐⭐
 * Day 02 - ⭐⭐
@@ -12,3 +12,4 @@ https://adventofcode.com/2024
 * Day 06 - ⭐⭐
 * Day 07 - ⭐⭐
 * Day 08 - ⭐⭐
+* Day 09 - ⭐⭐
